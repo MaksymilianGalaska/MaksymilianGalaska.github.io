@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=ISO-8859-2" />  
+  <title>[ Tytul dokumentu ]</title>
+</head>
+<body>
+<script language="JavaScript">
+
+function BMI() {
+/* Odwołanie do formularza i jego elementów przez nazwę*/
+var waga=parseFloat(document.forms[0].elements[0].value);
+var wzrost=parseFloat(document.forms[0].elements[1].value);
+var wynik = waga/(wzrost*wzrost);
+alert(wynik);
+}
+</script>
+
+<form name="Form">
+Waga w kilogramach=<input type="Text" name="a"><br>
+Wzrost w metrach=<input type="Text" name="b"><br>
+<input type="Button" value="Oblicz BMI" onclick="BMI()">
+</form>
+<hr>
+
+</body>
+</html>
